@@ -67,4 +67,23 @@ func new --name hello --template "HTTP trigger"
 
 Elle aura crée au final ... azure cloud functions dont une qui sera appelée spécialement lorsque notre message queue sera sollicité (soit par la publication d'un message ou bien le traitement d'un).
 
+### Implement the service bus (message queue) to handle the growth of the traffic
+
+ite, nous avons implémenter une message queue en utilisant le service bus Azure afin de pouvoir gérer lorsque l'application va avoir un nombre de commandes simultanément effectuées en même temps. Pour se faire, il a fallut d'abord créer un espace de nom : 
+
+![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/85891210-9bd7-4dc4-95c8-e2f933984245)
+
+![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/8938bd22-a34e-4cfd-ba7d-24ebb1a71ede)
+
+
+Après avoir créer l'espace de service bus, il faut maintenant créer notre message queue :
+
+![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/c744f699-0fb3-4f32-b6f2-77fdefa1e574)
+
+![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/3a269fb9-543f-4baf-aa2c-c395cbc05c39)
+
+
+
+
+
 
