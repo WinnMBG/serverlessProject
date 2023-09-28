@@ -19,4 +19,15 @@ La solution utilisée de base consistait à prendre une machine virtuelle sur az
 
 La solution utilisée pour répondre à la problèmatique consiste à transformer l'ancien backend en plusieurs fonctions cloud azure afin de découpler les charges et de rendre l'application beaucoup plus flexible. De plus , en ce quii concerne les commandes, on peut voir qu'on va avoir recours à une message queue avec un certain quota pour justement s'adapter au flux grandissant de l'application.
 
-## 3) 
+## 3) Solution Implementation
+
+### Implement the database
+
+![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/f576cb5e-3624-485b-8ff4-a5e2e649fa86)
+
+Pour implémenter sa base de données, l'entreprise à choisit de la créer directement sur le portail Azure grâce au service Azure Cosmo DB afin qu'elle soit directement gérée dans le cloud. Cela aurait pu se faire aussi grâce à la CLI suivante :
+
+```
+# ssd
+```
+
