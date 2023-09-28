@@ -28,6 +28,13 @@ La solution utilisée pour répondre à la problèmatique consiste à transforme
 Pour implémenter sa base de données, l'entreprise à choisit de la créer directement sur le portail Azure grâce au service Azure Cosmo DB afin qu'elle soit directement gérée dans le cloud. Cela aurait pu se faire aussi grâce à la CLI suivante :
 
 ```
-# ssd
+// Login to the Azure 
+# az login
+
+// Create a Cosmo DB Account and Database
+# az cosmosdb create --name products --resource-group myResourceGroup --kind GlobalDocumentDB --locations "France Central" --default-consistency-level Eventual --enable-automatic-failover true --enable-multiple-write-locations true
+
+//Get connection string
+# az cosmosdb keys list --name myCosmosDBAccount --resource-group myResourceGroup
 ```
 
