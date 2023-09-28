@@ -12,7 +12,11 @@ ce non planifiée peut être coûteuse et perturber les calendriers de productio
 # Avant solution
 ![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/d618814b-2a1a-4f0d-8401-4776e3602de6)
 
-# Après Solution
+La solution utilisée de base consistait à prendre une machine virtuelle sur azure afin de pouvoir héberger le back end de l'application sur celle ci afin de ne pas avoir a s'occuper de la partie hardware d'une part et d'autre part car d'après les statisques réalisées sur plusieurs mois, elle s'est aperçu qu'il y avait une faible quantité de clients ( < 50000 / mois). 
 
+# Après Solution
+![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/25248209-d544-4b7a-a4ff-f0ebac4c48f8)
+
+La solution utilisée pour répondre à la problèmatique consiste à transformer l'ancien backend en plusieurs fonctions cloud azure afin de découpler les charges et de rendre l'application beaucoup plus flexible. De plus , en ce quii concerne les commandes, on peut voir qu'on va avoir recours à une message queue avec un certain quota pour justement s'adapter au flux grandissant de l'application.
 
 ## 3) 
