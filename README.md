@@ -35,6 +35,6 @@ Pour implémenter sa base de données, l'entreprise à choisit de la créer dire
 # az cosmosdb create --name products --resource-group myResourceGroup --kind GlobalDocumentDB --locations "France Central" --default-consistency-level Eventual --enable-automatic-failover true --enable-multiple-write-locations true
 
 //Get connection string
-# az cosmosdb keys list --name myCosmosDBAccount --resource-group myResourceGroup
+# az cosmosdb keys list --name products --resource-group myResourceGroup
 ```
 
