@@ -57,7 +57,12 @@ Ensuite, après avoir créer une application de fonction, on pourra créer nos f
 
 ```
 // Equivalent en cli
-# az function create --name myFunctionApp --resource-group myResourceGroup --consumption-plan-location your_location --runtime node --runtime-version 14 --functions-version 3 --disable-app-insights true
+# func init MyFunctionProj
+cd MyFunctionProj
+func new --name hello --template "HTTP trigger"
+
+// Deploy to azure
+# func azure functionapp publish myFunctionApp
 ```
 
 Elle aura crée au final ... azure cloud functions dont une qui sera appelée spécialement lorsque notre message queue sera sollicité (soit par la publication d'un message ou bien le traitement d'un).
