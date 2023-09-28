@@ -41,16 +41,25 @@ Pour implémenter sa base de données, l'entreprise à choisit de la créer dire
 ### Implement the azure functions
 
 
-Pour implémenter sa base de données, l'entreprise à choisit de la créer directement sur le portail Azure grâce au service Azure Cosmo DB afin qu'elle soit directement gérée dans le cloud. Cela aurait pu se faire aussi grâce à la CLI suivante :
+Pour implémenter ses fonctions azure qui remplaceront le backend actuel, l'entreprise à choisit de la créer directement sur le portail Azure aussi grâce au service Azure Functions afin qu'elle soit directement gérée dans le cloud. Pour se faire, il a fallut tout d'abord créer une application de fonction sur azure comme suit:
+
+![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/90da7bb4-ffe5-49b7-92e6-cd332a536092)
+
 
 ```
-// Login to the Azure 
-# az login
-
-// Create a Cosmo DB Account and Database
-# az cosmosdb create --name products --resource-group myResourceGroup --kind GlobalDocumentDB --locations "France Central" --default-consistency-level Eventual --enable-automatic-failover true --enable-multiple-write-locations true
-
-//Get connection string
-# az cosmosdb keys list --name products --resource-group myResourceGroup
+// Equivalent en cli
+# az functionapp create --name myFunctionApp --resource-group myResourceGroup --consumption-plan-location your_location --runtime node --runtime-version 14 --functions-version 3 --disable-app-insights true
 ```
+
+Ensuite, après avoir créer une application de fonction, on pourra créer nos futures fonctions cloud qui permettront de communiquer avec le base de données cosmo db qui a été crée juste avant:
+
+![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/1797e8d5-b088-4d93-a4fe-2ac90ebd0664)
+
+```
+// Equivalent en cli
+# az function create --name myFunctionApp --resource-group myResourceGroup --consumption-plan-location your_location --runtime node --runtime-version 14 --functions-version 3 --disable-app-insights true
+```
+
+Elle aura crée au final ... azure cloud functions dont une qui sera appelée spécialement lorsque notre message queue sera sollicité (soit par la publication d'un message ou bien le traitement d'un).
+
 
