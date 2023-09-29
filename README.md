@@ -93,4 +93,14 @@ Enfin pour gérer les commandes, on a créer une fonction azure chainée regroup
 
   ![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/bd36d672-34c2-4362-afc0-3c410b3128ae)
 
+# Liens des fonctions azures
+
+## Fonction getPrdoucts
+[link](https://shopnetapp.azurewebsites.net/api/findProducts?code=v2o8kkfuuiR7nL9z3PkHHGQNF92IoYmZD-gQ_9k4EvvNAzFuM29SqQ==)
+
+## Fonction getPrdouct
+[link](https://shopnetapp.azurewebsites.net/api/findProduct?code=1NaK8XuUulQuPrqROfxPDifGO9b0S0K6zUrYvI_HXP9OAzFuOFQ_Kw==)
+
+## Fonction postOrder (HTTP + Service Bus trigger)
+[link](https://shopnetapp.azurewebsites.net/api/sendOrderToQueue?code=U2myMGHU0zK1XZskcy9qVtbJH8tsWD3scLZyDEXva8ExAzFuctWbiQ==)
 
