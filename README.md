@@ -89,4 +89,8 @@ Enfin pour gérer les commandes, on a créer une fonction azure chainée regroup
 
   ![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/7cb13d25-c0a6-481d-aaeb-efff5450d14c)
 
+  ![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/8ca32dfb-a413-444d-84d7-3877104ae59e)
+
+  ![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/bd36d672-34c2-4362-afc0-3c410b3128ae)
+
 
