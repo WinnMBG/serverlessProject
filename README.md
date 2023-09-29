@@ -82,8 +82,11 @@ Après avoir créer l'espace de service bus, il faut maintenant créer notre mes
 
 ![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/3a269fb9-543f-4baf-aa2c-c395cbc05c39)
 
+Enfin pour gérer les commandes, on a créer une fonction azure chainée regroupant 2 fonctions:
 
+- Une "HTTP Trigeer" qui va prendre en paramètre les onfos de la commandes et va les publier sur la message queue.
+- Une "Service Bus Trigger" qui va, en fonction d'une nouvelle publication dans la queue, traiter le mesaage et le stocker dans la database comso DB.
 
-
+  ![image](https://github.com/WinnMBG/serverlessProject/assets/77972619/7cb13d25-c0a6-481d-aaeb-efff5450d14c)
 
 
