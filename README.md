@@ -96,11 +96,11 @@ Enfin pour gérer les commandes, on a créer une fonction azure chainée regroup
 # Liens des fonctions azures
 
 ## Fonction getPrdoucts
-[link](https://shopnetapp.azurewebsites.net/api/findProducts?code=v2o8kkfuuiR7nL9z3PkHHGQNF92IoYmZD-gQ_9k4EvvNAzFuM29SqQ==)
+[getProducts](https://shopnetapp.azurewebsites.net/api/findProducts?code=v2o8kkfuuiR7nL9z3PkHHGQNF92IoYmZD-gQ_9k4EvvNAzFuM29SqQ==)
 
 ## Fonction getPrdouct
-[link](https://shopnetapp.azurewebsites.net/api/findProduct?code=1NaK8XuUulQuPrqROfxPDifGO9b0S0K6zUrYvI_HXP9OAzFuOFQ_Kw==)
+[getProduct](https://shopnetapp.azurewebsites.net/api/findProduct?code=1NaK8XuUulQuPrqROfxPDifGO9b0S0K6zUrYvI_HXP9OAzFuOFQ_Kw==)
 
 ## Fonction postOrder (HTTP + Service Bus trigger)
-[link](https://shopnetapp.azurewebsites.net/api/sendOrderToQueue?code=U2myMGHU0zK1XZskcy9qVtbJH8tsWD3scLZyDEXva8ExAzFuctWbiQ==)
+[postCommand](https://shopnetapp.azurewebsites.net/api/sendOrderToQueue?code=U2myMGHU0zK1XZskcy9qVtbJH8tsWD3scLZyDEXva8ExAzFuctWbiQ==)
 
